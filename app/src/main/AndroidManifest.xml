@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hrgandroidstudio.caulculadora">
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon"
@@ -9,18 +8,24 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Caulculadora">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9939518381636264~1092563270"/>
         <activity android:name=".Porcentagem"></activity>
         <activity android:name=".Multiplicacao" />
         <activity android:name=".Divisao" />
         <activity android:name=".Subtracao" />
         <activity android:name=".somaActivity" />
         <activity android:name=".MainActivity">
-            <intent-filter>
+=            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 </manifest>
